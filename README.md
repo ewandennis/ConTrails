@@ -23,15 +23,15 @@ This little repo will pull flight tracks from a MongoDB and produce a heatmap of
    - frequency: 250Hz
    - temperature: 20C
    - humidity = 30%
-   - ergo absorption coefficient = 1.42 (reference)[https://en.wikibooks.org/wiki/Engineering_Acoustics/Outdoor_Sound_Propagation]
+   - ergo absorption coefficient = 1.42 [reference](https://en.wikibooks.org/wiki/Engineering_Acoustics/Outdoor_Sound_Propagation)
 
 ## The Calculation
 
 1. Distance field: each cell contains distance to closest flight track
 1. Noise field: each cell contains dB SPL from sea level of closest flight track
 1. Heatmap: 4-step colour map from normalised noise field cell values:
-  - Blue, green and yellow: below noise level of a car @ 10m
-  - Red: between car @ 10m and plane @ 100m
+    - Blue, green and yellow: below noise level of a car @ 10m
+    - Red: between car @ 10m and plane @ 100m
 
 ## Issues And Limitations
 
